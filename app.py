@@ -134,9 +134,6 @@ try:
             * Demais pokémon's como Aerodactyl, Infernape, Jirachi também são Pokémon's com bastante vítorias em combate. 
             """)
 
-    with st.expander("Ver Tabela de Taxas de Vitória"):
-        st.dataframe(df_win_rate)
-
     with st.expander(f"Ver Tabela dos Top {top_n} Vencedores"):
         st.dataframe(df_top_winners.set_index('id'))
 
