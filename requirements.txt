@@ -47,7 +47,7 @@ scipy==1.10.1
 six==1.17.0
 smmap==5.0.2
 streamlit==1.28.2
-tenacity==9.0.0
+tenacity==8.2.3
 threadpoolctl==3.5.0
 toml==0.10.2
 tornado==6.4.2
@@ -56,5 +56,6 @@ tzdata==2025.2
 urllib3==2.2.3
 watchdog==4.0.2
 zipp==3.20.2
+
 
 
