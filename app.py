@@ -9,8 +9,8 @@ from src.analysis_utils import prepare_data, train_model, analyze_top_winners, a
 from src.analysis_types import analyze_type_win_rate
 
 # --- Constantes de Arquivo ---
-FILE_POKEMON_REF = "data/pokemon.xlsx"
-FILE_COMBAT_REF = "data/combat_pokemon.xlsx"
+FILE_POKEMON_REF = "pokemon.xlsx"
+FILE_COMBAT_REF = "combat_pokemon.xlsx"
 
 # --- Configuração ---
 st.set_page_config(layout="wide", page_title="Análise de Combate Pokémon")
@@ -292,4 +292,5 @@ except FileNotFoundError as e:
 except Exception as e:
     st.error(
         f"Ocorreu um erro na execução do script. Verifique se todas as bibliotecas estão instaladas (`pandas`, `openpyxl`, `scikit-learn`, `plotly`).")
+
     st.exception(e)
